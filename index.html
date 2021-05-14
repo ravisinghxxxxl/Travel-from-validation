@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+      shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous">
+    <link rel="icon" href="td-bank-icon.png" type="image/icon type">
+    <title>TRAVEL DESK</title>
+  </head>
+  <body>
+
+    <!-- ALERT -->
+    <div id="success" class="alert alert-warning alert-dismissible fade show"
+      role="alert">
+      <strong>SUCCESS!</strong> you have submitted the form
+      <button type="button" class="close" data-dismiss="alert"
+        aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+
+    <div class="container">
+      <h1>TRVEL DESK</h1>
+
+      <!-- FORM -->
+      <form>
+
+        <div class="form-group">
+          <label for="userName">Username</label>
+          <input type="text" class="form-control is-invalid" id="userName" placeholder="Enter username:">
+          <small id="nameValid" class="form-text text-muted invalid-feedback">
+            Your username must be 2-10 characters long and contain letters and numbers only.
+          </small>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="text" class="form-control" id="email" placeholder="Enter your email:">
+        </div>
+
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Select a car: </label>
+          <select class="form-control" name="address" id="exampleFormControlSelect1">
+            <option>Octavia</option>
+            <option>Camero</option>
+            <option>Lemborgini</option>
+            <option>Mustang</option>
+            <option>Ferrari</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="address">Your address: </label>
+          <textarea class="form-control" id="address"
+          rows="3"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Your phone no.: </label>
+          <input class="form-control" id="phone"
+          rows="3"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Any message: </label>
+          <textarea class="form-control" id="message"
+            rows="3"></textarea>
+        </div>
+
+        <button class="btn btn-primary">SUBMIT</button>
+      </form>
+    </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
