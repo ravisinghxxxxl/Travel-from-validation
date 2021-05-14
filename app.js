@@ -14,6 +14,7 @@ names.addEventListener("blur", () => {
     names.classList.remove("is-invalid");
     validName = true;
   } else {
+    validName = false;
     names.classList.add("is-invalid");
   }
 });
@@ -26,6 +27,7 @@ email.addEventListener("blur", () => {
     email.classList.remove("is-invalid");
     validEmail = true;
   } else {
+    validEmail = false;
     email.classList.add("is-invalid");
   }
 });
@@ -39,19 +41,29 @@ phone.addEventListener("blur", () => {
     validPhone = true;
   } else {
     phone.classList.add("is-invalid");
+    validPhone = false;
   }
 });
 
-let submit = document.getElementById('submit');
+let submit = document.getElementById("submit");
 
-submit.addEventListener('click', (e) => {
-    e.preventDefault();
+submit.addEventListener("click", e => {
+  e.preventDefault();
 
-if(validPhone && validName && validEmail) {
- let success = document.getElementById('success');
- success.classList.add('show');
- console.log('Form submitted');
-} else {
-    console.log('Form input invalid');
-}
-})
+  if (validPhone && validName && validEmail) {
+    let success = document.getElementById("success");
+    console.log("Form submitted");
+
+    success.classList.add("show");
+    // faliure.classList.remove("show");
+    $("#faliure").hide();
+    $("#success").show();
+  } else {
+    let faliure = document.getElementById("faliure");
+    console.log("Invalid intput");
+    faliure.classList.add("show");
+    // success.classList.remove("show");
+    $("#success").hide();
+    $("#faliure").show();
+  }
+});
